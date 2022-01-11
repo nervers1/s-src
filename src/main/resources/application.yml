@@ -1,0 +1,17 @@
+logging:
+  config: classpath:log4j2.xml
+
+spring:
+  thymeleaf:
+    prefix : classpath:templates/
+    suffix : .html
+    cache : false
+  datasource:
+    url: jdbc:mariadb://52.78.8.92:3306/ssrc?useUnicode=yes&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Seoul
+    username: root
+    password: ssrc
+    driver-class-name: org.mariadb.jdbc.Driver
+
+mybatis:
+  type-aliases-package: com.example.ssrc
+  mapper-locations: mybatis/mapper/**/*.xml
