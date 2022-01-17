@@ -1,57 +1,12 @@
-2022-01-11 22:05:33,480 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2022-01-11 22:05:33,501 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
-2022-01-11 22:05:33,963 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
-2022-01-11 22:05:34,055 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 1365 ms
-2022-01-11 22:05:35,188 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(<init>:58) - Exposing 1 endpoint(s) beneath base path '/actuator'
-2022-01-11 22:05:35,230 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
-2022-01-11 22:05:36,129 [RMI TCP Connection(3)-192.168.0.18] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:525) - Initializing Servlet 'dispatcherServlet'
-2022-01-11 22:05:36,132 [RMI TCP Connection(3)-192.168.0.18] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:547) - Completed initialization in 2 ms
-2022-01-11 22:10:59,181 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2022-01-11 22:10:59,194 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
-2022-01-11 22:10:59,612 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
-2022-01-11 22:10:59,692 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 1245 ms
-2022-01-11 22:11:00,138 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:57) - Adding welcome page template: index
-2022-01-11 22:11:00,698 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(<init>:58) - Exposing 1 endpoint(s) beneath base path '/actuator'
-2022-01-11 22:11:00,743 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
-2022-01-11 22:11:01,661 [RMI TCP Connection(1)-192.168.0.18] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:525) - Initializing Servlet 'dispatcherServlet'
-2022-01-11 22:11:01,662 [RMI TCP Connection(1)-192.168.0.18] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:547) - Completed initialization in 1 ms
-2022-01-11 22:14:28,096 [main] INFO  com.example.ssrc.SsrcApplication(logStarting:55) - Starting SsrcApplication using Java 11 on Dev with PID 24288 (C:\Dev\sources\ssrc\build\classes\java\main started by Dev in C:\Dev\sources\ssrc)
-2022-01-11 22:14:28,096 [main] INFO  com.example.ssrc.SsrcApplication(logStartupProfileInfo:635) - No active profile set, falling back to default profiles: default
-2022-01-11 22:14:28,884 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2022-01-11 22:14:28,900 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
-2022-01-11 22:14:29,297 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
-2022-01-11 22:14:29,375 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 1232 ms
-2022-01-11 22:14:29,803 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:57) - Adding welcome page template: index
-2022-01-11 22:14:30,230 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(<init>:58) - Exposing 1 endpoint(s) beneath base path '/actuator'
-2022-01-11 22:14:30,277 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
-2022-01-11 22:14:30,309 [main] INFO  com.example.ssrc.SsrcApplication(logStarted:61) - Started SsrcApplication in 2.55 seconds (JVM running for 3.63)
-2022-01-11 22:14:31,305 [RMI TCP Connection(3)-192.168.0.18] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:525) - Initializing Servlet 'dispatcherServlet'
-2022-01-11 22:14:31,305 [RMI TCP Connection(3)-192.168.0.18] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:547) - Completed initialization in 0 ms
-2022-01-11 22:14:47,891 [http-nio-8080-exec-1] INFO  com.example.ssrc.service.Impl.CommonServiceImpl(getTime:25) - 시간이 찍히는지 봅시다 --> 2022-01-11T13:14:48
-2022-01-11 22:14:47,892 [http-nio-8080-exec-1] INFO  com.example.ssrc.controller.CommonController(getTime:22) - time --> 2022-01-11T13:14:48
-2022-01-11 22:25:36,886 [main] INFO  com.example.ssrc.SsrcApplication(logStarting:55) - Starting SsrcApplication using Java 11 on Dev with PID 24280 (C:\Dev\sources\ssrc\build\classes\java\main started by Dev in C:\Dev\sources\ssrc)
-2022-01-11 22:25:36,889 [main] INFO  com.example.ssrc.SsrcApplication(logStartupProfileInfo:635) - No active profile set, falling back to default profiles: default
-2022-01-11 22:25:37,629 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2022-01-11 22:25:37,645 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
-2022-01-11 22:25:38,042 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
-2022-01-11 22:25:38,120 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 1200 ms
-2022-01-11 22:25:38,563 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:57) - Adding welcome page template: index
-2022-01-11 22:25:39,069 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(<init>:58) - Exposing 1 endpoint(s) beneath base path '/actuator'
-2022-01-11 22:25:39,116 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
-2022-01-11 22:25:39,132 [main] INFO  com.example.ssrc.SsrcApplication(logStarted:61) - Started SsrcApplication in 2.587 seconds (JVM running for 3.67)
-2022-01-11 22:25:39,954 [RMI TCP Connection(3)-192.168.0.18] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:525) - Initializing Servlet 'dispatcherServlet'
-2022-01-11 22:25:39,954 [RMI TCP Connection(3)-192.168.0.18] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:547) - Completed initialization in 0 ms
-2022-01-11 22:43:27,359 [main] INFO  com.example.ssrc.SsrcApplication(logStarting:55) - Starting SsrcApplication using Java 11 on Dev with PID 27528 (C:\Dev\sources\ssrc\build\classes\java\main started by Dev in C:\Dev\sources\ssrc)
-2022-01-11 22:43:27,375 [main] INFO  com.example.ssrc.SsrcApplication(logStartupProfileInfo:635) - No active profile set, falling back to default profiles: default
-2022-01-11 22:43:28,138 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2022-01-11 22:43:28,154 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
-2022-01-11 22:43:28,519 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
-2022-01-11 22:43:28,597 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 1200 ms
-2022-01-11 22:43:29,025 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:57) - Adding welcome page template: index
-2022-01-11 22:43:29,449 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(<init>:58) - Exposing 1 endpoint(s) beneath base path '/actuator'
-2022-01-11 22:43:29,496 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
-2022-01-11 22:43:29,512 [main] INFO  com.example.ssrc.SsrcApplication(logStarted:61) - Started SsrcApplication in 2.464 seconds (JVM running for 3.615)
-2022-01-11 22:43:30,148 [RMI TCP Connection(1)-192.168.0.18] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:525) - Initializing Servlet 'dispatcherServlet'
-2022-01-11 22:43:30,148 [RMI TCP Connection(1)-192.168.0.18] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:547) - Completed initialization in 0 ms
-2022-01-11 22:47:43,319 [http-nio-8080-exec-1] INFO  com.example.ssrc.service.Impl.CommonServiceImpl(getTime:25) - 시간이 찍히는지 봅시다 --> 2022-01-11T13:47:43
-2022-01-11 22:47:43,320 [http-nio-8080-exec-1] INFO  com.example.ssrc.controller.CommonController(getTime:22) - time --> 2022-01-11T13:47:43
+2022-01-17 15:31:44,060 [main] INFO  com.example.ssrc.SsrcApplication(logStarting:55) - Starting SsrcApplication using Java 14.0.2 on formulate-mac.local with PID 19593 (/opt/code/projects/s-src/build/classes/java/main started by formulate in /opt/code/projects/s-src)
+2022-01-17 15:31:44,069 [main] INFO  com.example.ssrc.SsrcApplication(logStartupProfileInfo:635) - No active profile set, falling back to default profiles: default
+2022-01-17 15:31:44,923 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:132) - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-01-17 15:31:44,935 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:201) - Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2022-01-17 15:31:45,350 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8080 (http)
+2022-01-17 15:31:45,406 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:290) - Root WebApplicationContext: initialization completed in 1297 ms
+2022-01-17 15:31:45,920 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:57) - Adding welcome page template: index
+2022-01-17 15:31:46,882 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(<init>:58) - Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-01-17 15:31:46,921 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-17 15:31:46,941 [main] INFO  com.example.ssrc.SsrcApplication(logStarted:61) - Started SsrcApplication in 3.227 seconds (JVM running for 3.992)
+2022-01-17 15:31:47,306 [RMI TCP Connection(1)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:525) - Initializing Servlet 'dispatcherServlet'
+2022-01-17 15:31:47,308 [RMI TCP Connection(1)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:547) - Completed initialization in 1 ms
