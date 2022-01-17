@@ -37,4 +37,4 @@ out/
 .vscode/
 
 ### logs
-/ssrc/logs/*
+logs/
