@@ -39,3 +39,4 @@ out/
 ### logs
 /logs/
 /logs/*.log
+/logs/s-src-server.log
