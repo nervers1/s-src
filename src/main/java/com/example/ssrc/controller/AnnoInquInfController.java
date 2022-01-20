@@ -22,10 +22,4 @@ public class AnnoInquInfController {
         return "time";
     }
 
-
-    @RequestMapping("test")
-    public String page() {
-        return "template2/index";
-    }
-
 }
