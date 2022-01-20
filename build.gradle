@@ -37,6 +37,7 @@ dependencies {
     implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-yaml', version: '2.10.3'
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-devtools'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test' exclude module: 'spring-boot-starter-logging'
     implementation 'org.mybatis:mybatis-typehandlers-jsr310:1.0.2'
