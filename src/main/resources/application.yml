@@ -27,3 +27,7 @@ spring:
 mybatis:
   type-aliases-package: com.example.ssrc
   mapper-locations: mybatis/mapper/**/*.xml
+
+custom:
+  path:
+    upload-images: /opt/code/projects/s-src/file/upload/

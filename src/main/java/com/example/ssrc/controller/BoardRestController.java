@@ -5,7 +5,7 @@ import com.example.ssrc.service.BoardService;
 import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.data.relational.core.sql.In;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -23,9 +23,11 @@ public class BoardRestController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(BoardRestController.class);
     private final BoardService board;
+    private final String uploadImagePath;
 
-    public BoardRestController(BoardService board) {
+    public BoardRestController(BoardService board, @Value("${custom.path.upload-images}") String uploadImagePath) {
         this.board = board;
+        this.uploadImagePath = uploadImagePath;
     }
 
     @GetMapping(path = "/posts")
@@ -62,24 +64,19 @@ public class BoardRestController {
 
         LOGGER.info("----------------- upload ");
         Map<String, Object> jsonObject = new HashMap<>();
-        // /opt/code/projects/s-src/src/main/resources/templates/test.html
-        // /opt/code/projects/s-src/src/main/resources/templates/test.html
-        String fileRoot = "/opt/code/projects/s-src/src/main/resources/static/upload/";	//저장될 외부 파일 경로
-//        String fileRoot = "classpath:/upload/";	//저장될 외부 파일 경로
         String originalFileName = multipartFile.getOriginalFilename();	//오리지날 파일명
         String extension = originalFileName.substring(originalFileName.lastIndexOf("."));	//파일 확장자
         String savedFileName = UUID.randomUUID() + extension;	//저장될 파일 명
 
 
-        File targetFile = new File(fileRoot + savedFileName);
+        File targetFile = new File(uploadImagePath + savedFileName);
         try (InputStream fileStream = multipartFile.getInputStream()){
-
+            // 파일 정보를 취득하고 Database에 인서트 한다.
             LOGGER.info("getOriginalFilename : {}", originalFileName);
             LOGGER.info("extension : {}", extension);
             LOGGER.info("targetFile : {}", targetFile);
             LOGGER.info("savedFileName : {}", savedFileName);
 
-//            multipartFile.transferTo(targetFile);
             FileUtils.copyInputStreamToFile(fileStream, targetFile);	//파일 저장
             jsonObject.put("url", "/upload/" +savedFileName);
             jsonObject.put("responseCode", "success");
