@@ -59,7 +59,6 @@ public class BoardRestController {
 
 
     @PostMapping(value="/uploadSummernoteImageFile", produces = "application/json")
-    @ResponseBody
     public ResponseEntity<Map<String, Object>> uploadSummernoteImageFile(@RequestParam("file") MultipartFile multipartFile) {
 
         LOGGER.info("----------------- upload ");
