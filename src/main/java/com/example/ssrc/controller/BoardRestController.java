@@ -58,30 +58,30 @@ public class BoardRestController {
     }
 
 
-    @PostMapping(value="/uploadSummernoteImageFile", produces = "application/json")
+    @PostMapping(value = "/uploadSummernoteImageFile", produces = "application/json")
     public ResponseEntity<Map<String, Object>> uploadSummernoteImageFile(@RequestParam("file") MultipartFile multipartFile) {
 
         LOGGER.info("----------------- upload ");
         Map<String, Object> jsonObject = new HashMap<>();
-        String originalFileName = multipartFile.getOriginalFilename();	//오리지날 파일명
-        String extension = originalFileName.substring(originalFileName.lastIndexOf("."));	//파일 확장자
-        String savedFileName = UUID.randomUUID() + extension;	//저장될 파일 명
+        String originalFileName = multipartFile.getOriginalFilename();    //오리지날 파일명
+        String extension = originalFileName.substring(originalFileName.lastIndexOf("."));    //파일 확장자
+        String savedFileName = UUID.randomUUID() + extension;    //저장될 파일 명
 
 
         File targetFile = new File(uploadImagePath + savedFileName);
-        try (InputStream fileStream = multipartFile.getInputStream()){
+        try (InputStream fileStream = multipartFile.getInputStream()) {
             // 파일 정보를 취득하고 Database에 인서트 한다.
             LOGGER.info("getOriginalFilename : {}", originalFileName);
             LOGGER.info("extension : {}", extension);
             LOGGER.info("targetFile : {}", targetFile);
             LOGGER.info("savedFileName : {}", savedFileName);
 
-            FileUtils.copyInputStreamToFile(fileStream, targetFile);	//파일 저장
-            jsonObject.put("url", "/upload/" +savedFileName);
+            FileUtils.copyInputStreamToFile(fileStream, targetFile);    //파일 저장
+            jsonObject.put("url", "/upload/" + savedFileName);
             jsonObject.put("responseCode", "success");
 
         } catch (IOException e) {
-            FileUtils.deleteQuietly(targetFile);	//저장된 파일 삭제
+            FileUtils.deleteQuietly(targetFile);    //저장된 파일 삭제
             jsonObject.put("responseCode", "error");
             e.printStackTrace();
         }

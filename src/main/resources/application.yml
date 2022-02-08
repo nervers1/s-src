@@ -11,9 +11,9 @@ spring:
     livereload:
       enabled: true
   thymeleaf:
-    prefix : classpath:templates/
-    suffix : .html
-    cache : false
+    prefix: classpath:templates/
+    suffix: .html
+    cache: false
   datasource:
     url: jdbc:mariadb://52.78.8.92:3306/ssrc?useUnicode=yes&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Seoul
     username: root
