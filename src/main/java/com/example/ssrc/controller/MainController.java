@@ -18,6 +18,6 @@ public class MainController {
 
     @RequestMapping(path = {"/main", "/"})
     public String main(Model model) {
-        return "template2/index";
+        return "index";
     }
 }
